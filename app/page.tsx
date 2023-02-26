@@ -1,7 +1,6 @@
 import Avatar from '../components/portrait'
 import SkillStack from '../components/skillstack'
 import BlogPosts from '../components/blogPosts'
-import aboutMetaData from '../components/aboutMetaData'
 import Problems from '../components/problems'
 import {WorkTimeline,EducationTimeline} from '../components/workTimeline'
 
