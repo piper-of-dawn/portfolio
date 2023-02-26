@@ -3,6 +3,7 @@ import SkillStack from '../components/skillstack'
 import BlogPosts from '../components/blogPosts'
 import Problems from '../components/problems'
 import {WorkTimeline,EducationTimeline} from '../components/workTimeline'
+import { Roboto } from '@next/font/google';
 
 
 
