@@ -216,7 +216,7 @@ plt.legend()
 plt.show()
 ```
 
-![](public/../../public/images/dataclasses.png)
+![](/images/dataclasses.png)
 
 
 

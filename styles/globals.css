@@ -5,6 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 
+.beautify-button{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: inherit;
+  border-radius: calc(var(--geist-radius) - 1px);
+  background: linear-gradient(-90deg,#007cf0,#00dfd8,#ff0080,#007cf0);
+  background-size: 400% 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  animation: collaboration-button_backgroundAnim__JOflA 8s ease-in-out infinite;
+}
+
 
 
 
@@ -167,10 +183,6 @@ text-align: right;
  
 }
 
-.timeline-container{
-
-  
-}
 
 
 

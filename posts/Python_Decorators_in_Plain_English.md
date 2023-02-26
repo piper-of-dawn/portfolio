@@ -150,7 +150,7 @@ Let us now plot kernel density of the mean of each list of random numbers.
 from seaborn import kdeplot
 kdeplot(returnRandomNumber(1000))
 ```
-!['Density plot for means'](2023-02-11-18-11-24.png)
+!['Density plot for means'](/images/decorators.webp)
 
 
 Congratulations! You just demonstrated the central limit theorem using Python decorators. 

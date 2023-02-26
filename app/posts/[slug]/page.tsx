@@ -31,14 +31,15 @@ const BlogPage = (props: any) => {
 
 
 
-      <div className="max-w-4xl mx-auto">
-    
-    <Link href="../">
-      <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-20">
-    <span>Back</span>
-  </button></Link>
+      <div className="max-w-4xl mx-auto pl-8 pr-8">
+   <div className="relative group">
+      <Link href="../">
+        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mb-4 mt-12 ">
+      <span>Back</span>
+    </button></Link>
+   </div>
   
-  <div className="name mt-20 font-serif text-verybig text-center mx-auto tracking-wide p-4 ml-24 mr-24 text-slate-700 border-t border-b pt-6 dark:border-slate-800">{post.data.title}</div> 
+  <div className="font-serif text-center mx-auto text-big tracking-wide text-slate-700 border-t border-b pt-6  dark:border-slate-800 lg:text-verybig p-4 lg:ml-24 lg:mr-24 lg:mt-20">{post.data.title}</div> 
           
         <article className="prose mx-auto">
         
