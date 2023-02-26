@@ -1,0 +1,53 @@
+import fs from "fs";
+import Markdown from "markdown-to-jsx";
+import matter from "gray-matter"
+import getPostMetaDatas from "../../../components/getPostMetaData";
+import Link from "next/link";
+
+
+
+const getPostContent = (slug: string) => {
+  const folder = "posts/"; //This is the folder where your posts are stored
+  const file = folder + slug + ".md"; // This is the file name
+  const content = fs.readFileSync(file, "utf-8"); // Function readFileSync() reads the contents of the file synchronously
+  const matterResult = matter(content);
+  return matterResult;
+}
+
+export const generateStaticParams = async () => {
+  const posts = getPostMetaDatas();
+  return posts.map((post) => {
+    return {
+        slug: post.slug,
+      }});
+    }
+
+const BlogPage = (props: any) => {
+  const slug = props.params.slug;
+  const post = getPostContent(slug);  
+  return ( 
+
+   <div>
+
+
+
+      <div className="max-w-4xl mx-auto">
+    
+    <Link href="../">
+      <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-20">
+    <span>Back</span>
+  </button></Link>
+  
+  <div className="name mt-20 font-serif text-verybig text-center mx-auto tracking-wide p-4 ml-24 mr-24 text-slate-700 border-t border-b pt-6 dark:border-slate-800">{post.data.title}</div> 
+          
+        <article className="prose mx-auto">
+        
+  
+      
+        <Markdown>{post.content}</Markdown>
+        </article>
+       </div>
+   </div>
+  );
+};
+export default BlogPage;
