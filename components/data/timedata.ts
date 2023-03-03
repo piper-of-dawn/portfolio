@@ -14,7 +14,7 @@ export const workData = [{
   "company": "Citibank",
   "logo": "/citi.png",
   "location": "Mumbai, India",
-  "description": "I led the development of the validation and the reporting framework for Climate related model risk. The core responsibilities involved the validation of high risk models used for CCAR reporting for 2022 CCAR cycle. Climate Risk: Currently, leading the development of the validation. Self-undertaken the initiative of automation of internal workflow tracking and management by creating a dedicated Python library for the task. I also volunteered for non-BAU activities and worked with the highest levels Citi MRM Leadership."
+  "description": "I led the development of the validation and the reporting framework for Climate related model risk. The core responsibilities involved the validation of high risk models used for CCAR reporting for 2022 CCAR cycle. I also self-undertook the initiative of automation of internal workflow tracking and management by creating a dedicated Python library for the task. I also volunteered for non-BAU activities and worked with the highest levels Citi MRM Leadership."
 },
 ]
 
