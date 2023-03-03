@@ -8,11 +8,12 @@ import {WorkTimeline,EducationTimeline} from '../components/workTimeline'
 
 
 
-
 const about = () => {     
   return (
+    
     <div className='flex-col lg:grid grid-cols-5 ml-auto mr-auto gap-9 pt-6 max-w-7xl'>
 
+   
       <div id="LeftSide" className='relative xl:sticky pr-4 mx-auto'>
         <Avatar />
         <div className='pl-8 pr-8 pt-4 hidden lg:flex'><SkillStack /></div>
