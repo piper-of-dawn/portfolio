@@ -47,19 +47,8 @@
 
 /*  CSS for screen size 768px and above */
 
-.intro {
-  display: grid; 
-  max-width: 35vw;
-  row-gap: 2rem;  
-  grid-template-areas: 
-    "photo name"
-    "nav about"; 
- 
-}
 
-.photo { grid-area: photo; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right:auto; max-width: 12vmax;}
-.about { grid-area: about; min-width: 20vmax;}
-.name { grid-area: name;}
+
 
 .nav{ grid-area: nav; } 
 
