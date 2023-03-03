@@ -33,6 +33,6 @@ export const educationData = [{
   "company": "Kirorimal College, University of Delhi",
   "logo": "/du.png",
   "location": "New Delhi, India",
-"description": "I was also the member of Placement Cell, IGIDR and also participated and lead several extra-co-curricular activities in the college"
+"description": "I was also the member of Placement Cell, Kirorimal College and also participated and lead several extra-co-curricular activities in the college"
 },
 ]
