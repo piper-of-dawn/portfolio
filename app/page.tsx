@@ -3,7 +3,9 @@ import SkillStack from '../components/skillstack'
 import BlogPosts from '../components/blogPosts'
 import Problems from '../components/problems'
 import {WorkTimeline,EducationTimeline} from '../components/workTimeline'
-import { Roboto } from '@next/font/google';
+
+
+
 
 
 
@@ -19,8 +21,8 @@ const about = () => {
       <div id="AboutSection" className='pl-8 pr-8 md:col-span-2 md:pl-4 md:pr-4'>
 
         <div className="about leading-6 p-14 md:pr-8 pt-6 pl-8">
-          <div> <div className="font-sans font-light text-center text-big text-slate-700 xl:text-left">Hi I'm </div><p className='font-normal text-big text-center text-slate-700 xl:text-left mt-5 mb-5'>Kumar Shantanu</p></div>
-          <p className='text-normal font-semibold font-mono text-slate-900 mb-auto mt-auto pb-4 text-justify'> I'm a design-loving nerd, navigating the intersection of technology, mathematics and art, on this wild ride of figuring out the ways to do something meaningful. </p>
+          <div> <div className="font-sans font-light text-center text-verylarge text-slate-700 xl:text-left">Hi I'm </div><p className='font-normal text-verylarge text-center text-slate-700 xl:text-left mt-5 mb-5'>Kumar Shantanu</p></div>
+          <p className='text-normal font-semibold text-slate-900 mb-auto mt-auto pb-4 text-justify'> I'm a design-loving nerd, navigating the intersection of technology, mathematics and art, on this wild ride of figuring out the ways to do something meaningful. </p>
           <p className='text-normal font-semibold font-mono text-justify text-slate-500 row-start-2'>Econometrics and Time-Series Analysis are my craft and thus I hunt patterns and weave stories with data for a living. I speak Hindi and English to humans, while Python and Javascript to computers.  I am currently learning deep learning, financial engineering and to speak Polish and Rust. In my free time, I develop statistical/econometric models for credit loss forecasting at Union Bank of Switzerland (UBS).</p>
         </div>
      
@@ -44,18 +46,8 @@ const about = () => {
 <div className="name font-mono font-medium text-normal text-center mx-auto uppercase tracking-wide p-4 text-sky-900 border-t border-b pt-6 dark:border-slate-800 mb-5">Formal Education</div>    
  
  <EducationTimeline/></div>
-
-  
-
-     
-
-
-
       </div>
 
-      
-    
-   
   )}
  
 export default about;
