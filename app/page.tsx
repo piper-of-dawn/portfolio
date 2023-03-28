@@ -34,17 +34,19 @@ const about = () => {
       <div className='pl-8 pr-8 mb-6 md:hidden xl:sticky pt-6'><SkillStack/></div>  
  
       <div id="posts" className='mb-6 md:col-span-2'>
-        <div className="ml-12 mr-12 font-mono font-medium text-normal text-center mx-auto uppercase tracking-wide p-4 text-sky-900 border-t border-b pt-6 dark:border-slate-800 mb-5">Meditations</div> 
+        <div className="ml-auto mr-auto font-mono font-bold border-t border-b border-dotted text-normal text-center uppercase tracking-wide p-2 w-40 pt-3 mb-5">Meditations</div> 
         <BlogPosts/>
         </div>
      
  <div className="timeline col-span-2 col-start-2 pl-8 pr-8">
-<div className="name font-mono font-medium text-normal text-center mx-auto uppercase tracking-wide p-4 text-sky-900 border-t border-b pt-6 dark:border-slate-800 mb-5">Professional Journey</div>    
+ <div className="ml-auto mr-auto font-mono font-bold border-t border-b border-dotted  text-normal text-center uppercase tracking-wide p-2 w-52 pt-3 dark:border-slate-900 mb-5">Professional Journey</div> 
+
   
   
    <WorkTimeline/></div>
  <div className="timeline col-span-2 pl-8 pr-8"> 
-<div className="name font-mono font-medium text-normal text-center mx-auto uppercase tracking-wide p-4 text-sky-900 border-t border-b pt-6 dark:border-slate-800 mb-5">Formal Education</div>    
+ <div className="ml-auto mr-auto font-mono font-bold border-t border-b border-dotted text-normal text-center uppercase tracking-wide p-2 w-52 pt-3 dark:border-slate-900 mb-5">Formal Education</div> 
+    
  
  <EducationTimeline/></div>
       </div>

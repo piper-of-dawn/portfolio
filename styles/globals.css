@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 
+::selection {
+  background: #e0e0e0;
+}
 
 
 .beautify-button{
