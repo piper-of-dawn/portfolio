@@ -1,20 +1,27 @@
 import { PostMetaData } from "./postMetaData";
 import Link from "next/link";
+import Image from 'next/image'
 
 const PostPreview = (props: PostMetaData ) => {
   return (
 
       <div className="relative group">
 
-<div className="absolute inset-3 bg-gradient-to-r from-sky-400 to-cyan-900 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
 
 
-          <div className="relative flex flex-col align-middle p-4 rounded-md bg-white mb-4 h-fit shadow-sm">
-           <Link href={`/posts/${props.slug}`}>
-              <h1 className="font-bold text-large overflow-hidden whitespace-nowrap text-sky-900 hover:underline group-hover:overflow-visible">{props.title}</h1>
-              </Link>
-              <h4 className="text-normal text-slate-600">{props.subtitle}</h4>
-              <h6 className="font-mono text-subtitle">{props.date}</h6>    
+          <div className="relative flex flex-col align-middle p-4 rounded-md bg-white mb-4 h-fit shadow-md">
+
+              <div className="group-hover:-translate-y-3 ease-out duration-100">
+              <Link href={`/posts/${props.slug}`}>
+                <h1 className="font-bold text-large overflow-hidden whitespace-nowrap group-hover:overflow-visible">{props.title}</h1>
+               
+                <h4 className="text-normal text-slate-600">{props.subtitle}</h4>
+                <h6 className="font-mono text-subtitle">{props.date}</h6> 
+           
+               <p className="hidden group-hover:flex flex-row text-normal font-bold m-2 ease-in-out duration-200">Read <Image className="m-1" src="\images\arrow-right-solid.svg" alt= "Logo" width={10} height={10} /></p>
+              
+                 </Link>    </div>
+
           </div>
       </div>
   
