@@ -23,8 +23,8 @@ const about = () => {
 
         <div className="about leading-6 p-14 md:pr-8 pt-6 pl-8">
           <div> <div className="font-sans font-light text-center text-verylarge text-slate-700 xl:text-left">Hi! I'm </div><p className='font-normal text-verylarge text-center text-slate-700 xl:text-left mt-5 mb-5'>Kumar Shantanu</p></div>
-          <p className='text-normal font-semibold font-mono text-slate-900 mb-auto mt-auto pb-4 text-justify'> I'm a design-loving nerd, navigating the intersection of technology, mathematics and art, on this wild ride of figuring out ways to do something meaningful. </p>
-          <p className='text-normal font-semibold font-mono text-justify text-slate-500 row-start-2'>Econometrics and Time-Series Analysis are my craft and thus I hunt patterns and weave stories with data for a living. I speak Hindi and English to humans, while Python and Javascript to computers.  I am currently learning deep learning, financial engineering and to speak Polish and Rust. In my free time, I develop statistical/econometric models for credit loss forecasting at Union Bank of Switzerland (UBS).</p>
+          <p className='text-normal font-semibold text-slate-900 mb-auto mt-auto pb-4 text-justify'> I'm a design-loving nerd, navigating the intersection of technology, mathematics and art, on this wild ride of figuring out ways to do something meaningful. </p>
+          <p className='text-normal font-semibold text-justify text-slate-500 row-start-2'>Econometrics and Time-Series Analysis are my craft and thus I hunt patterns and weave stories with data for a living. I speak Hindi and English to humans, while Python and Javascript to computers.  I am currently learning deep learning, financial engineering and to speak Polish and Rust. In my free time, I develop statistical/econometric models for credit loss forecasting at Union Bank of Switzerland (UBS).</p>
         </div>
      
       <div className='lg:pt-6 pl-8 pr-8'><Problems/></div>   
@@ -34,7 +34,8 @@ const about = () => {
       <div className='pl-8 pr-8 mb-6 md:hidden xl:sticky pt-6'><SkillStack/></div>  
  
       <div id="posts" className='mb-6 md:col-span-2'>
-        <div className="ml-auto mr-auto font-mono font-bold border-t border-b border-dotted text-normal text-center uppercase tracking-wide p-2 w-40 pt-3 mb-5">Meditations</div> 
+        <div className="ml-auto mr-auto font-mono font-bold border-t border-b border-dotted text-normal text-center uppercase tracking-wide p-2 w-40 pt-3 mb-5">Meditations</div>
+        <p className='text-normal font-semibold w-80 text-slate-500 ml-auto mr-auto p-4 pb-8 text-justify'>Here, I share my meditations on the things that intrigue, amuse, or enlighten me. I usually write about computer programming, quantitative finance, some random life experiences or anythingthat captivates my curiosity. You can also find me on Medium and LinkedIn blogs.</p> 
         <BlogPosts/>
         </div>
      

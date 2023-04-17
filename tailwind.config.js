@@ -14,16 +14,16 @@ module.exports = {
 },
 
   fontSize: {
-    'huge': '5rem',
+    'subtitle':'0.75rem',
+    'small': '0.6rem',
+    '14px': '0.875rem',
     'normal': '13px',
+    'huge': '5rem',
     'large': '1rem',
     'verylarge': '1.5rem',
     'big': '2rem',
     'verybig': '3rem',
-    'subtitle':'0.75rem',
-    'small': '0.6rem',
     'tiny': '0.4rem',
-    '14px': '0.875rem',
 
 },
 },
