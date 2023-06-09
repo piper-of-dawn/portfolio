@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/polish/PolishWordsTable.tsx"  ],
   "exclude": [
     "node_modules"
   ]
