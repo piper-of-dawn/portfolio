@@ -3,6 +3,11 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter"
 import getPostMetadata from "../../../components/getPostMetaData";
 import Link from "next/link";
+import ReactMarkdown from 'react-markdown'
+import {remark} from 'remark'
+import remarkToc from 'remark-toc'
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 
 
@@ -22,11 +27,14 @@ export const generateStaticParams = async () => {
 };
 
 const BlogPage = (props: any) => {
-  const slug = props.params.slug;
-  const post = getPostContent(slug);  
+const slug = props.params.slug;
+const post = getPostContent(slug);  
+
+
   return ( 
 
-
+<>
+   
     <div className="max-w-4xl mx-auto pl-8 pr-8">
    <div className="relative group">
       <Link href="../">
@@ -36,14 +44,15 @@ const BlogPage = (props: any) => {
 
   
   <div className="font-serif text-center mx-auto text-big tracking-wide text-slate-700 border-t border-b pt-6  dark:border-slate-800 lg:text-verybig p-4 lg:ml-24 lg:mr-24 lg:mt-20">{post.data.title}</div> 
-          
-        <article className="prose mx-auto">
-        
   
-      
-        <Markdown>{post.content}</Markdown>
-        </article>
-       </div>
+        <article className="prose">
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+ </article>
+
+
+    </div>
+
+    </>
  
   );
 };

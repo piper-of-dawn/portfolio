@@ -11,6 +11,7 @@ module.exports = {
     'sans': ['Roboto','Sofia Sans','Arial', 'sans-serif'],
     'mono': ['JetBrains Mono','Consolas', 'sans-serif'],
     'serif': ['Old Standard TT','Georgia', 'serif'],
+    'dmmono': ['DM Mono','Consolas', 'sans-serif'],
 },
 
   fontSize: {
