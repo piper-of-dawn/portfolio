@@ -8,17 +8,17 @@ module.exports = {
       }
   },
   fontFamily: {
-    'sans': ['Roboto','Sofia Sans','Arial', 'sans-serif'],
-    'mono': ['JetBrains Mono','Consolas', 'sans-serif'],
-    'serif': ['Old Standard TT','Georgia', 'serif'],
-    'dmmono': ['DM Mono','Consolas', 'sans-serif'],
+    'sans': ['Supreme'],
+    'mono': ['var(--font-geist-mono)','JetBrains Mono','Consolas', 'sans-serif'],
+    'switzer': ['Source Serif 4','Switzer'],
+    serif: ['var(--font-serif)'],
 },
 
   fontSize: {
     'subtitle':'0.75rem',
     'small': '0.6rem',
     '14px': '0.875rem',
-    'normal': '13px',
+    'normal': '14px',
     'huge': '5rem',
     'large': '1rem',
     'verylarge': '1.5rem',

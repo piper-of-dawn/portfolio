@@ -1,13 +1,20 @@
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
+import Image from 'next/image'
+
 import matter from "gray-matter"
 import getPostMetadata from "../../../components/getPostMetaData";
-import Link from "next/link";
+import '../../../styles/blogPost.css';
 import ReactMarkdown from 'react-markdown'
-import {remark} from 'remark'
-import remarkToc from 'remark-toc'
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { Tinos }  from 'next/font/google'
+
+const serif = Tinos({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
 
 
 
@@ -27,33 +34,29 @@ export const generateStaticParams = async () => {
 };
 
 const BlogPage = (props: any) => {
-const slug = props.params.slug;
-const post = getPostContent(slug);  
-
-
-  return ( 
-
-<>
-   
-    <div className="max-w-4xl mx-auto pl-8 pr-8">
-   <div className="relative group">
-      <Link href="../">
-        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mb-4 mt-12 ">
-      <span>Back</span>
-    </button></Link>  </div>
-
+  const slug = props.params.slug;
+  const post = getPostContent(slug);
   
-  <div className="font-serif text-center mx-auto text-big tracking-wide text-slate-700 border-t border-b pt-6  dark:border-slate-800 lg:text-verybig p-4 lg:ml-24 lg:mr-24 lg:mt-20">{post.data.title}</div> 
+
+  return (
+
+    <>
+
+      <div className="bg-gray-50">
   
-        <article className="prose">
-        <ReactMarkdown>{post.content}</ReactMarkdown>
- </article>
 
+        <div className="absolute bg-gray-50 inset-0 bg-[url(/images/grid.svg)] bg-top"></div>
+        <div className="relative card bg-orange-50 py-8 shadow-lg md:mx-auto md:max-w-3xl lg:max-w-5xl lg:pb-28 lg:p-2 lg:pt-16 mt-0 md:mt-16">
+          <div className={`${serif.variable} font-serif font-normal leading-6 text-slate-950 prose prose-slate mx-auto lg:prose-xl`}>
+     
+            <div className="font-black text-verybig text-slate-950 leading-tight">{post.data.title}</div>
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
 
-    </div>
-
+        </div>
+      </div>
     </>
- 
+
   );
 };
 export default BlogPage;
