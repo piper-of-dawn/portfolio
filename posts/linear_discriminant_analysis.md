@@ -6,7 +6,9 @@ date: "2022-03-05"
 reading_time: "5 min"
 ---
 This weekend as a fun project, I thought to hindcast (prediction for the past) through linear discriminant analysis (LDA), if I went for a run on a given day or not, using the Apple Watch data that keeps a track of health and fitness information, encompassing activity levels, sleep patterns, body temperature, heart rate variations etc.  
-But most importantly, I decided to implement linear discriminant analysis (LDA) from scratch, I mean capital-S scratch. **I won’t even use NumPy, Pandas or Scipy or anything**; just pure good 'ol Python with its humble lists, some built-in tools and the first principles of linear algebra and statistics. I've even hand-coded tasks like matrix multiplication, inversion and maximum likelihood estimation from ground up. By the way, this whole endeavour has a street name: 'Not Invented by Me' syndrome, for those who lose sleep over not inventing the wheel themselves. Anyway, a word of caution: don't try this at home since iteration over Python lists is painfully slow, being pointers to objects in noncontiguous memory, or your computer might question its existence and you might question my sanity (truth be told, I sometimes do too), but let’s look how it turned out!
+
+## Problem Statement
+I decided to implement linear discriminant analysis (LDA) from scratch, I mean capital-S scratch. **I won’t even use NumPy, Pandas or Scipy or anything**; just pure good 'ol Python with its humble lists, some built-in tools and the first principles of linear algebra and statistics. I've even hand-coded tasks like matrix multiplication, inversion and maximum likelihood estimation from ground up. By the way, this whole endeavour has a street name: 'Not Invented by Me' syndrome, for those who lose sleep over not inventing the wheel themselves. Anyway, a word of caution: don't try this at home since iteration over Python lists is painfully slow, being pointers to objects in noncontiguous memory, or your computer might question its existence and you might question my sanity (truth be told, I sometimes do too), but let’s look how it turned out!
 
 All the code is in notebook here: [LDA from scratch](https://github.com/piper-of-dawn/lda_from_scratch)
 
@@ -41,8 +43,7 @@ Let's simplify the notations for better readability and ease of typing. We denot
     &\propto \mathbf{P}[X_i | Y_i = k] \mathbf{P}[Y_i = k] &\qquad \text{Step 3} 
 \end{align*}
 ```
-The first step is the application of Bayes' rule. In the second step, the denominator is expanded using the law of total probability. The denominator, $\mathbf{P}[X_i] $, is expressed as the sum of the joint probabilities of $X_i $ and $Y_i $ over all possible values of $Y_i $. This is the prior probability of $X_i $.
-3. The proportionality in step 3, indicates that the expression is proportional to the product of the likelihood and the prior, with the constant of proportionality being the marginal probability of the heart rate and the active energy $X_i $. Deriving this expression, was precisely the intent behind going through all these steps. The implication is important:
+The first step is the application of Bayes' rule. In the second step, the denominator is expanded using the law of total probability. The denominator, $\mathbf{P}[X_i] $, is expressed as the sum of the joint probabilities of $X_i $ and $Y_i $ over all possible values of $Y_i $. This is the prior probability of $X_i $. The proportionality in step 3, indicates that the expression is proportional to the product of the likelihood and the prior, with the constant of proportionality being the marginal probability of the heart rate and the active energy $X_i $. Deriving this expression, was precisely the intent behind going through all these steps. The implication is important:
 
 **If we know the likelihood $\mathbf{P}[X_i | Y_i = k] $ and the prior $\mathbf{P}[Y_i = k] $, we can find a decision rule $D(X_i) $ as a function of evidence that discriminates between the two classes.**
 

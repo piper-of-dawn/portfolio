@@ -29,7 +29,7 @@ module.exports = {
     'small': '0.6rem',
     '14px': '0.875rem',
     'normal': '14px',
-    'read': '15px',
+    'read': '20px',  
     'huge': '5rem',
     'large': '1rem',
     'verylarge': '1.5rem',
