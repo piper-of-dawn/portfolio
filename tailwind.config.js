@@ -14,11 +14,22 @@ module.exports = {
     serif: ['var(--font-serif)'],
 },
 
+  fontWeight: {
+    'light': 300,
+    'normal': 400,
+    'medium': 500,
+    'mediumx': 550, 
+    'semibold': 600, // 'bold' is aliased to '700
+    'bold': 700,
+    'black': 900,
+  },
+
   fontSize: {
     'subtitle':'0.75rem',
     'small': '0.6rem',
     '14px': '0.875rem',
     'normal': '14px',
+    'read': '15px',
     'huge': '5rem',
     'large': '1rem',
     'verylarge': '1.5rem',

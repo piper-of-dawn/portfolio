@@ -9,7 +9,6 @@ import Meditations from '../components/meditations'
 const about = () => {     
   return (
    
-    // <div className="bg-[url(/images/beams.jpg)] bg-left bg-contain bg-translate-x-1/2 bg-no-repeat bg-gray-50 "> 
     <div className='flex-col lg:grid grid-cols-5 ml-auto mr-auto gap-9 pt-6 max-w-7xl '>
   
    
