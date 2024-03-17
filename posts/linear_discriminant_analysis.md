@@ -1,6 +1,6 @@
 ---
-title: "Linear Discriminant Analysis"
-subtitle: "Implementing LDA from scratch in Python"
+title: "Hindcasting my runs: Implementing Linear Discriminant Analysis from Scratch"
+subtitle: "Reinventing the wheel"
 hierarchy: "/ Notes / Machine Learning"
 date: "2022-03-05"
 reading_time: "5 min"
@@ -110,6 +110,12 @@ Running the model on test data gives me 100% accuracy. All test observations are
 ![Linear Projection](/images/linear_projection.png)
 *Figure 4: Linear Projection found through LDA*
 
-That's it. The entire logic and math above is coded from ground up (nobody else’s code and nobody else’s data) Machine Learning in Finance. All of it is in Jupyter notebook here: [LDA from scratch](https://github.com/piper-of-dawn/lda_from_scratch)
+That's it. The entire logic and math above is coded from ground up (nobody else’s code and nobody else’s data). All of it is in Jupyter notebook here: [LDA from scratch](https://github.com/piper-of-dawn/lda_from_scratch)
 
 
+## Citations
+
+1. Fan, J., Li, R., Zhang, C.-H., and Zou, H. (2020). *Statistical Foundations of Data Science*. CRC Press, forthcoming.
+2. Wikipedia. Quadratic Classifier. [https://en.wikipedia.org/wiki/Quadratic_classifier](https://en.wikipedia.org/wiki/Quadratic_classifier)
+3. Bishop, Christopher M. (2006). *Pattern Recognition and Machine Learning*. Springer.
+4. Jones, Andrew Charles. LDA Explained. [https://github.com/rushrukh/explainable_ai_literature](https://github.com/rushrukh/explainable_ai_literature)
