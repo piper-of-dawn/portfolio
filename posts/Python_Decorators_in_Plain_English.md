@@ -11,7 +11,6 @@ Suppose you have a very simple function that generates a random number between 0
 
 ```
 from random import random
-
 def returnRandomNumber() -> float:
     return random()
   

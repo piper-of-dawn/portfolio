@@ -14,6 +14,7 @@ const getPostMetadata = () => {
     title: metadata.data.title,
     date: metadata.data.date,
     subtitle: metadata.data.subtitle,
+    hierarchy: metadata.data.hierarchy,
     slug: filename.replace(".md", ""),
   }
 })
