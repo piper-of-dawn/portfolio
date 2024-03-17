@@ -52,7 +52,7 @@ const BlogPage = (props: any) => {
             <div className="text-center font-sans font-bold text-stone-900 text-verylarge leading-tight">{post.data.title}</div>
             <hr className="h-px mx-auto my-8 bg-gray-300 border-0 dark:bg-gray-700"></hr>
        
- <ReactMarkdown className="text-read text-stone-900 font-medium text-justify leading-relaxed"  remarkPlugins={[remarkMath]}
+ <ReactMarkdown className="text-read text-stone-900 font-medium leading-relaxed"  remarkPlugins={[remarkMath]}
     rehypePlugins={[rehypeKatex]}>{post.content}</ReactMarkdown> 
       
           </div>
