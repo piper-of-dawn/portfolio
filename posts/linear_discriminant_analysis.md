@@ -10,6 +10,9 @@ But most importantly, I decided to implement linear discriminant analysis (LDA) 
 
 All the code is in notebook here: [LDA from scratch](https://github.com/piper-of-dawn/lda_from_scratch)
 
+![Photo](/images/GermanyTrail.jpg)
+*A photo I took while running a trail in Bavaria, Germany.*
+
 ## Implementing LDA, the hard way
 The data has been sourced from Apple Health and Nike Run Club. The data was easy to export as Apple Health has a button to export your personal health data locally. The running data is just one binary variable, did I run or not run on that day, but the data was a pain to retrieve. But runners are persistent and stubborn so someone wrote a Python library to extract data from Nike Run Club. Visualising this data as a simple scatterplot, does reveal certain interesting characterstics. To keep things simple, I will use my maximum heart rate recorded throughout the day and active energy burned that is the calories burned when I was physically active to predict whether I went for a run or not. 
 
