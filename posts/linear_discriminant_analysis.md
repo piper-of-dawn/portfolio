@@ -24,11 +24,11 @@ The data has been sourced from Apple Health and Nike Run Club. The data was easy
 If you look carefully, I have visualised 4 dimensions in this scatterplot. The color represents the binary outcome - whether I ran or did not. The x-axis represents the average heart rate, the y-axis represents the active energy burned, the size of the dots represents the average wrist temperature during the day (scaled relatively). This kind of visualisation is interesting and it can reveal a lot about the interplay of these features. For example, the days I ran intensively, I had a higher average wrist temperature. The day I had a fever, I did not run, I had a very low active energy burned and a high wrist temperature. All of this is visualized below. It is interesting indeed.
 
 ![Insights from Data](/images/chart_running_raw_annotated.svg)
-*Figure 2: Insights from Data)*
+*Figure 2: Insights from Data*
 
 And then I found the decision rule (hyperplane) that separates the classes, visualised as follows:
 ![Insights from Data](/images/chart_running_decision_boundary.svg)
-*Figure 4: Running data with decision boundary found through LDA*
+*Figure 3: Running data with decision boundary found through LDA*
 
 Now, let us dive into the the first principles and mathematics behind LDA which I have implemented. If you are not into mathematics and statistics, you can skip this section.
 
