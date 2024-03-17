@@ -46,10 +46,10 @@ const BlogPage = (props: any) => {
 
     <div className="bg-amber-50 p-10">
   
-          <div className={`${serif.variable} pt-20 font-mono leading-6 prose text-neutral-950 mx-auto lg:prose-xl`}>     
-            <div className="text-center font-serif text-stone-600 uppercase  text-subtitle font-bold leading-tight">{post.data.hierarchy}</div>
+          <div className={`${serif.variable} pt-20 font-sans leading-6 prose text-neutral-950 mx-auto lg:prose-xl`}>     
+            <div className="text-center font-sans text-stone-600 uppercase  text-subtitle font-bold leading-tight">{post.data.hierarchy}</div>
             <hr className="x-auto h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"></hr>            
-            <div className="text-center font-serif font-bold text-stone-900 text-verylarge leading-tight">{post.data.title}</div>
+            <div className="text-center font-sans font-bold text-stone-900 text-verylarge leading-tight">{post.data.title}</div>
             <hr className="h-px mx-auto my-8 bg-gray-300 border-0 dark:bg-gray-700"></hr>
        
  <ReactMarkdown className="text-read text-stone-900 font-medium text-justify leading-relaxed"  remarkPlugins={[remarkMath]}
