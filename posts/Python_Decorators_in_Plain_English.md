@@ -1,6 +1,7 @@
 ---
 title: "Python Decorators in Plain English"
 subtitle: "A beginner friendly guide to Python decorators."
+hierarchy: "/ Notes / Python"
 date: "2022-02-01"
 ---
 
