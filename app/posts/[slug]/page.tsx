@@ -3,7 +3,7 @@ import matter from "gray-matter"
 import getPostMetadata from "../../../components/getPostMetaData";
 import '../../../styles/blogPost.css';
 import ReactMarkdown from 'react-markdown'
-import { Old_Standard_TT }  from 'next/font/google'
+import { Old_Standard_TT } from 'next/font/google'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css'
@@ -38,26 +38,27 @@ export const generateStaticParams = async () => {
 const BlogPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
-  
+
 
   return (
 
 
 
-    <div className="bg-amber-50 p-10">
-  
-          <div className="pt-20 font-sans leading-6 prose text-neutral-950 mx-auto lg:prose-xl">     
-            <div className="text-center mx-auto p-2 font-sans border-y-2 border-gray-900 border-x-2 text-stone-900 uppercase text-subtitle font-bold leading-tight lg:w-1/4 xl: w-1/2">{post.data.hierarchy}</div>
-            <hr className="x-auto h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"></hr>            
-            <div className="text-center font-sans font-bold text-stone-900 text-verylarge leading-tight">{post.data.title}</div>
-            <hr className="h-px mx-auto my-8 bg-gray-300 border-0 dark:bg-gray-700"></hr>
-       
- <ReactMarkdown className="text-read text-stone-900 font-medium leading-relaxed"  remarkPlugins={[remarkMath]}
-    rehypePlugins={[rehypeKatex]}>{post.content}</ReactMarkdown> 
-      
-          </div>
+    <div className="p-10">
 
-</div>
+      <div className="pt-20 font-sans leading-6 prose text-neutral-950 mx-auto lg:prose-xl">
+        <div className="text-center mx-auto p-2 font-mono border-y-2 border-gray-900 border-x-2 text-stone-900 uppercase text-subtitle font-bold leading-tight lg:w-1/3 xl: w-1/2">{post.data.hierarchy}</div>
+        <div className="text-center font-sans font-black text-stone-900 uppercase text-big leading-tight pt-16 pb-5 md:text-huge">{post.data.title}</div>
+        <div className="font-sans font-bold text-center text-large text-stone-600">{post.data.subtitle}</div>
+        <div className="font-mono pt-4 text-normal text-center mx-auto w-1/2">
+          Kumar Shantanu | {post.data.date}
+        </div>
+        <ReactMarkdown className="text-read text-stone-900 font-medium leading-relaxed pt-16" remarkPlugins={[remarkMath]}
+          rehypePlugins={[rehypeKatex]}>{post.content}</ReactMarkdown>
+
+      </div>
+
+    </div>
 
 
   );
