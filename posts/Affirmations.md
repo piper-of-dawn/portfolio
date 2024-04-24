@@ -47,6 +47,7 @@ date: "2022-04-15"
 - You are tied down by your own invisible orthodoxy. The laws of physics are the only limit
 - And do not get trapped at local maxima. 
 
+### RAISE THE CEILING, AND NEVER THE FLOOR
 And yes, most important! Ego is the enemy. It is self defeating and depression inducing. Always be grounded. The higher you go, the harder it will get to contain your ego. Never forget, you are a mere mortal chimp with a plan and also without a tail.
 
 I love ya!
