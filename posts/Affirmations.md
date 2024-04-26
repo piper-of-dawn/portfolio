@@ -26,7 +26,7 @@ date: "2022-04-15"
 - Get good at telling stories. Get good at sales.
 - Listen at least thrice more than you speak.
 - Better to get your dopamine from improving your ideas than from having them validated
-- If right things are said in a wrong way, they aren't necessarily right then.
+- If right things are said in a wrong way, they lose their righteousness.
 - And yes! when deep into shit, keep your mouth shut.
 
 ### INSPIRATION IS PERISHABLE. ACT ON IT.
