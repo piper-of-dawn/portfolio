@@ -26,6 +26,7 @@ date: "2022-04-15"
 - Get good at telling stories. Get good at sales.
 - Listen at least thrice more than you speak.
 - Better to get your dopamine from improving your ideas than from having them validated
+- If right things are said in a wrong way, they aren't necessarily right then.
 - And yes! when deep into shit, keep your mouth shut.
 
 ### INSPIRATION IS PERISHABLE. ACT ON IT.
@@ -48,6 +49,9 @@ date: "2022-04-15"
 - And do not get trapped at local maxima. 
 
 ### RAISE THE CEILING, AND NEVER THE FLOOR
-And yes, most important! Ego is the enemy. It is self defeating and depression inducing. Always be grounded. The higher you go, the harder it will get to contain your ego. Never forget, you are a mere mortal chimp with a plan and also without a tail.
+- And yes, most important! Ego is the enemy. It is self defeating and depression inducing. 
+- Always be grounded. 
+- The higher you go, the harder it will get to contain your ego. 
+- Never forget, you are a mere mortal chimp with a plan and also without a tail.
 
 I love ya!
