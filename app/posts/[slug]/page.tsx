@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import { Old_Standard_TT } from 'next/font/google'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
+import rehypeRaw from 'rehype-raw'
 import 'katex/dist/katex.min.css'
 
 
@@ -46,15 +47,16 @@ const BlogPage = (props: any) => {
 
     <div className="p-10">
 
-      <div className="pt-20 font-sans leading-6 prose text-neutral-950 mx-auto lg:prose-xl">
-        <div className="text-center mx-auto p-2 font-mono border-y-2 border-gray-900 border-x-2 text-stone-900 uppercase text-subtitle font-bold leading-tight lg:w-1/3 xl: w-1/2">{post.data.hierarchy}</div>
-        <div className="text-center font-sans font-black text-stone-900 uppercase text-big leading-tight pt-16 pb-5 md:text-huge">{post.data.title}</div>
-        <div className="font-sans font-bold text-center text-large text-stone-600">{post.data.subtitle}</div>
+      <div className="pt-20 font-sans leading-6 prose text-polar-night mx-auto lg:prose-xl">
+        <div className="text-center mx-auto p-2 font-mono border-y-2 border-gray-900 border-x-2 text-polar-night uppercase text-subtitle font-bold leading-tight lg:w-1/3 xl: w-1/2">{post.data.hierarchy}</div>
+        <div className="text-center font-sans font-black text-polar-night uppercase text-big leading-tight pt-16 pb-5 md:text-huge">{post.data.title}</div>
+        <div className="font-sans font-bold text-center text-large text-polar-night">{post.data.subtitle}</div>
         <div className="font-mono pt-4 text-normal text-center mx-auto w-1/2">
           Kumar Shantanu | {post.data.date}
         </div>
-        <ReactMarkdown className="text-read text-stone-900 font-medium leading-relaxed pt-16" remarkPlugins={[remarkMath]}
-          rehypePlugins={[rehypeKatex]}>{post.content}</ReactMarkdown>
+        <ReactMarkdown className="text-read 
+text-polar-night font-normal leading-relaxed pt-16" remarkPlugins={[remarkMath]}
+          rehypePlugins={[rehypeKatex, rehypeRaw]}>{post.content}</ReactMarkdown>
 
       </div>
 

@@ -3,9 +3,21 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        'polar-night': '#292E39',
+        'polar-snow': '#ECEFF4',
+        'frost-teal': '#A3BE8C',
+        'slate-gray': '#657B83',
+        'frost-azure': '#6CA1C1',
+        'aurora-green': '#A3BE8C',
+        'aurora-purple': '#A78EA2',
+        'frost-aqua': '#88B3B3',
+        'aurora-red': '#BF616A'
+      },
       gridAutoRows: {
         '2fr': 'minmax(0, 2fr)',
-      }
+      },
+
     },
     fontFamily: {
       'sans': ['Supreme'],
@@ -24,6 +36,7 @@ module.exports = {
       'bold': 700,
       'black': 900,
     },
+
 
     fontSize: {
       'subtitle': '0.75rem',
