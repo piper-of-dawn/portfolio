@@ -4,20 +4,87 @@ import PostPreview from "./PostPreview";
 
 const BlogPosts = () => {
   const postMetadata = getPostMetaDatas();
-  const postPreviews = postMetadata.map((post) => (
-    <PostPreview key={post.slug} {...post} />
-    
-    // ... is the spread operator. It takes all the properties of the object and spreads them out as props.
-    // This is the same as: <PostPreview title={post.title} subtitle={post.subtitle} date={post.date} slug={post.slug} />
-    // key is a special prop that React uses to identify which items have changed, are added, or are removed. It must be unique.
-  ));
+  const postBuckets: { [key: string]: any } = {
+
+  }
+  postMetadata.map((post) => {
+    if (post.label in postBuckets) {
+      postBuckets[post.label].push(post);
+    } else {
+      postBuckets[post.label] = [post];
+    }
+  });
+
+  // const getPostPreviews = (key: string) => {
+  //   return postBuckets[key].map((post: any) => (
+  //     <PostPreview key={post.slug} {...post} />
+  //   ));
+  // }
+
+  let postPreviews = postMetadata.filter((post) => post.classification != 'Notes').map((post) => {
+    // let postPreviewsLocal = getPostPreviews(post.label);
+    return (
+      <div key={post.label} className="min-w-full pt-8">
+        {/* <h1 className="text-read font-mono text-polar-night  font-semibold uppercase pb-4">{key}</h1> */}
+        {/* <hr></hr> */}
+
+        <PostPreview key={post.slug} {...post} />
+
+      </div>
+    )
+  }
+  );
   return (
     <div id="posts" className="flex">
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-4 justify-center min-w-full pl-12 pr-12">   
-        {postPreviews}   
+      <div className="grid grid-cols-1 md:grid-cols-4">
+        {postPreviews}
       </div>
     </div>
   );
 };
 
-export default BlogPosts; 
+
+
+
+const NotesPosts = () => {
+  const postMetadata = getPostMetaDatas();
+  const postBuckets: { [key: string]: any } = {
+
+  }
+  postMetadata.map((post) => {
+    if (post.label in postBuckets) {
+      postBuckets[post.label].push(post);
+    } else {
+      postBuckets[post.label] = [post];
+    }
+  });
+
+  // const getPostPreviews = (key: string) => {
+  //   return postBuckets[key].map((post: any) => (
+  //     <PostPreview key={post.slug} {...post} />
+  //   ));
+  // }
+
+  let postPreviews = postMetadata.filter((post) => post.classification == 'Notes').map((post) => {
+    // let postPreviewsLocal = getPostPreviews(post.label);
+    return (
+      <div key={post.label} className="min-w-full pt-8">
+        {/* <h1 className="text-read font-mono text-polar-night  font-semibold uppercase pb-4">{key}</h1> */}
+        {/* <hr></hr> */}
+
+        <PostPreview key={post.slug} {...post} />
+
+      </div>
+    )
+  }
+  );
+  return (
+    <div id="posts" className="flex">
+      <div className="grid grid-cols-1 md:grid-cols-4">
+        {postPreviews}
+      </div>
+    </div>
+  );
+};
+export default BlogPosts;
+export { BlogPosts, NotesPosts };

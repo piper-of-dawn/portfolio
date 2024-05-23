@@ -1,21 +1,24 @@
 import "../styles/globals.css"
 
-import {GeistMono} from "geist/font/mono";
+import { GeistMono } from "geist/font/mono";
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
-  
+
+
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+
 
   return (
     <html className={`${GeistMono.variable}`} lang="en">
       <head />
-      <body> 
+      <body>
 
         <div>
-   
-        {children}
+
+          {children}
         </div>
-        
-        </body>
+
+      </body>
 
     </html>
   )

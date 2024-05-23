@@ -1,7 +1,7 @@
 ---
 title: "Dataclasses 101"
 subtitle: "All about dataclasses - an inbuilt datastructure in Python"
-hierarchy: "/ Notes / Python"
+hierarchy: "/ Writings / Python"
 date: "2022-01-14"
 ---
 

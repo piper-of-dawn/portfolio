@@ -1,7 +1,7 @@
 ---
 title: "Random Walk with Jumps"
 subtitle: "Modeling Asset Prices with Jumps and Diffusion"
-hierarchy: "/ Notes / Financial Engineering /"
+hierarchy: "/ Notes / Financial Engineering"
 date: "2022-05-20"
 reading_time: "5 min"
 ---

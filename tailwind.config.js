@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -20,7 +21,7 @@ module.exports = {
 
     },
     fontFamily: {
-      'sans': ['Supreme'],
+      'sans': ['-apple-system', 'BlinkMacSystemFont', 'Supreme', 'Arial'],
       'mono': ['var(--font-geist-mono)', 'JetBrains Mono', 'Consolas', 'sans-serif'],
       'switzer': ['Source Serif 4', 'Switzer'],
       serif: ['var(--font-serif)'],
@@ -41,6 +42,8 @@ module.exports = {
     fontSize: {
       'subtitle': '0.75rem',
       'small': '0.6rem',
+      '10px': '10px',
+      '12px': '12px',
       '14px': '0.875rem',
       'normal': '14px',
       'read': '17px',

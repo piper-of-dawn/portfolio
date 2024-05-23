@@ -1,7 +1,7 @@
 ---
 title: "Hindcasting my runs"
 subtitle: "Implementing Linear Discriminant Analysis from Scratch"
-hierarchy: "/ Notes / Machine Learning"
+hierarchy: "/ Writings / Machine Learning"
 date: "2022-03-05"
 reading_time: "5 min"
 ---

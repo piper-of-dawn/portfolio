@@ -7,17 +7,19 @@ const getPostMetadata = () => {
   const markdownPosts = fileNames.filter((fn) => fn.endsWith(".md")); // Filter the files that end with .md
   const slugs = markdownPosts.map((fn) => fn.replace(".md", "")); // Remove the .md extension from the file name
   // Get frontmatter from the markdown file
-    const posts = markdownPosts.map((filename)=> {
+  const posts = markdownPosts.map((filename) => {
     const fileContent = fs.readFileSync(`${folder}/${filename}`, "utf-8");
-    const metadata = matter(fileContent);    
-  return {
-    title: metadata.data.title,
-    date: metadata.data.date,
-    subtitle: metadata.data.subtitle,
-    hierarchy: metadata.data.hierarchy,
-    slug: filename.replace(".md", ""),
-  }
-})
+    const metadata = matter(fileContent);
+    return {
+      title: metadata.data.title,
+      date: metadata.data.date,
+      subtitle: metadata.data.subtitle,
+      hierarchy: metadata.data.hierarchy,
+      slug: filename.replace(".md", ""),
+      classification: metadata.data.hierarchy.trim().split("/").slice(-2)[0].trim(),
+      label: metadata.data.hierarchy.trim().split("/").slice(-1)[0].trim()
+    }
+  })
   return posts
 };
 
