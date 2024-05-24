@@ -1,7 +1,8 @@
 ---
 title: "Interesting Statistical Facts You Probably Didn't Know"
 subtitle: "Originally posted by Venkat Raman on LinkedIn"
-hierarchy: "/ Notes / Statistics /"
+hierarchy: "/ Notes / Statistics"
+date: "2024-05-24"
 ---
 
 Credits: [Venkat Raman on LinkedIn](https://www.linkedin.com/posts/venkat-raman-analytics_interesting-statistical-facts-you-probably-activity-7194937046925205504-Bc69?utm_source=share&utm_medium=member_desktop)
