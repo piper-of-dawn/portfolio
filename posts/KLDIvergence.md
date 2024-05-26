@@ -8,11 +8,11 @@ date: "2024-05-26"
 
 ## Definition
 The definition for KL divergence between two probability distributions P and Q is:
+
 $$ D_{\text{KL}}(P||Q) = \sum_{x} P(x) \log \left(\frac{P(x)}{Q(x)}\right) $$
+
 where:
-1. **Probability Distributions P and Q**: 
-   - $$ P(x) $$ represents the probability of event $$ x $$ occurring in distribution P.
-   - $$ Q(x) $$ represents the probability of event $$ x $$ occurring in distribution Q.
+1. **Probability Distributions P and Q**: $P(x)$ and $Q(x)$ represents the probability of event $x$ occurring in distribution P and Q respectively.
 
 2. **Relative Likelihood**:
    - The term $$ \frac{P(x)}{Q(x)} $$ calculates the relative likelihood of event $$ x $$ according to distribution P compared to distribution Q.
@@ -32,3 +32,6 @@ where:
    - A KL divergence of 0 indicates that the two distributions are identical, while a higher value signifies greater divergence.
 
 In essence, KL divergence provides a way to assess the discrepancy between two probability distributions, helping in various fields like machine learning, statistics, and information theory to understand the difference in information content between them.
+
+
+Also read about [Maximising Likehood is equivalent to Minimising KL Divergence](https://mmuratarat.github.io/2019-05-13/mle-kl-divergence)
