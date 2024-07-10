@@ -21,7 +21,6 @@ Leveraged loans are loans made to non-investment grade U.S. corporations, typica
    - Always have incurrence covenants limiting certain company activities   
    - Revolvers usually have maintenance covenants with quarterly financial tests[1]
 7. **Floating rate:** Pays a base rate (historically LIBOR, now SOFR) plus an additional spread[1]
-
 8. Default and recovery rates:
    - Long-term annual default rate averages below 3%
    - Historical average discounted recovery rate of around 79%[1]
@@ -51,12 +50,18 @@ Leveraged loans get their name because the borrowing companies typically have su
 
 ### WARF
 
-The Weighted Average Rating Factor Test (WARF) is a key collateral quality test used in CLOs to ensure the portfolio maintains a minimum average credit quality. The calculation involves assigning a numerical rating factor (RF) to each loan based on its credit rating, then computing a weighted average using the formula: 
-$$ \text{WARF} = \frac{\sum(\text{Principal Balance}_i × \text{RF}_i)} {\sum(\text{Principal Balance}_i)}$$where i represents each loan in the portfolio. Lower rating factors correspond to higher credit quality. The purpose of WARF is to constrain the CLO manager to maintain a certain level of overall portfolio credit quality, as specified in the CLO's indenture. By setting a maximum allowable WARF, the test helps protect investors in the rated debt tranches by limiting the amount of lower-quality loans that can be included in the portfolio.
+The Weighted Average Rating Factor Test (WARF) is a key collateral quality test used in CLOs to ensure the portfolio maintains a minimum average credit quality. The calculation involves assigning a numerical rating factor (RF) to each loan based on its credit rating, then computing a weighted average using the formula:
+
+$$ \text{WARF} = \frac{\sum(\text{Principal Balance}_i × \text{RF}_i)} {\sum(\text{Principal Balance}_i)}$$
+
+where i represents each loan in the portfolio. Lower rating factors correspond to higher credit quality. The purpose of WARF is to constrain the CLO manager to maintain a certain level of overall portfolio credit quality, as specified in the CLO's indenture. By setting a maximum allowable WARF, the test helps protect investors in the rated debt tranches by limiting the amount of lower-quality loans that can be included in the portfolio.
 
 ### WAS
 The Weighted Average Spread Test (WAS) is a key collateral quality test used in CLOs to ensure the portfolio maintains a minimum average spread over the base rate applicable to the liabilities. The calculation involves computing a weighted average using the formula: 
-$$ \text{WARF} = \frac{\sum(\text{Principal Balance}_i × \text{Spread}_i)} {\sum(\text{Principal Balance}_i)}$$where $i$ represents each loan in the portfolio, and $\text{Spread}_i$ is the difference between the loan's interest rate and the base rate (e.g., SOFR). The purpose of WAS is to constrain the CLO manager to maintain a certain level of overall portfolio yield relative to its funding costs, as specified in the CLO's indenture. By setting a minimum allowable WAS, the test helps ensure that the CLO generates sufficient income to cover its liabilities and provide returns for equity investors, while also maintaining an appropriate risk-return profile for the overall portfolio.
+
+$$ \text{WARF} = \frac{\sum(\text{Principal Balance}_i × \text{Spread}_i)} {\sum(\text{Principal Balance}_i)}$$
+
+where $i$ represents each loan in the portfolio, and $\text{Spread}_i$ is the difference between the loan's interest rate and the base rate (e.g., SOFR). The purpose of WAS is to constrain the CLO manager to maintain a certain level of overall portfolio yield relative to its funding costs, as specified in the CLO's indenture. By setting a minimum allowable WAS, the test helps ensure that the CLO generates sufficient income to cover its liabilities and provide returns for equity investors, while also maintaining an appropriate risk-return profile for the overall portfolio.
 
 
 ## Lifecycle of a close
