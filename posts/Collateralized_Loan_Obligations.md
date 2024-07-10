@@ -31,8 +31,6 @@ Leveraged loans get their name because the borrowing companies typically have su
 
 ## Collateralized Loan Obligation (CLO)
 
-> CLO (Collateralized Loan Obligation) is a securitization over leveraged loans. CLOs are structured financial products that pool together a collection of leveraged loans—loans made to non-investment grade companies—and then issue various tranches of securities backed by these loans. These tranches range from highly rated debt to equity, each offering different levels of risk and return. The cash flows from the underlying leveraged loans are used to pay interest and principal to the CLO investors, following a hierarchical "waterfall" structure. This securitization process allows investors to gain exposure to the leveraged loan market while diversifying risk across a portfolio of loans
-
 1. A Collateralized Loan Obligation (CLO) is a structured financial product that invests in a diversified pool of leveraged loans made to non-investment grade U.S. corporations.
 2. CLOs are typically structured with multiple tranches of securities, ranging from AAA-rated senior debt to equity, with each tranche offering different levels of risk and return.
 3. The CLO structure usually consists of 8-15% equity and 85-92% rated debt tranches. 
@@ -64,7 +62,7 @@ $$ \text{WARF} = \frac{\sum(\text{Principal Balance}_i × \text{Spread}_i)} {\su
 where $i$ represents each loan in the portfolio, and $\text{Spread}_i$ is the difference between the loan's interest rate and the base rate (e.g., SOFR). The purpose of WAS is to constrain the CLO manager to maintain a certain level of overall portfolio yield relative to its funding costs, as specified in the CLO's indenture. By setting a minimum allowable WAS, the test helps ensure that the CLO generates sufficient income to cover its liabilities and provide returns for equity investors, while also maintaining an appropriate risk-return profile for the overall portfolio.
 
 
-## Lifecycle of a close
+## Lifecycle of a CLO
 The lifecycle of a CLO can be summarized in three main phases:
 
 1. **Ramp-Up Phase:**
