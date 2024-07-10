@@ -21,10 +21,10 @@ Leveraged loans are loans made to non-investment grade U.S. corporations, typica
    - Always have incurrence covenants limiting certain company activities   
    - Revolvers usually have maintenance covenants with quarterly financial tests[1]
 7. **Floating rate:** Pays a base rate (historically LIBOR, now SOFR) plus an additional spread[1]
-8. Default and recovery rates:
+8. **Default and recovery rates:**
    - Long-term annual default rate averages below 3%
    - Historical average discounted recovery rate of around 79%[1]
-9. Market size and holders:
+9. **Market size and holders:**
    - CLOs are the largest single holder of leveraged loans, with approximately 64% market share[1]
 
 Leveraged loans get their name because the borrowing companies typically have substantial debt relative to their EBITDA, a ratio known as "leverage"[1]. Despite this, it's important to note that there is no embedded leverage in the loans themselves[1].
@@ -87,5 +87,5 @@ The total stated maturity of a CLO is usually 12-13 years, but most CLOs are cal
 
 ## Citations:
 [1] Loan Syndications and Trading Association. "THE U.S. CLO MARKET." Apr. 2022.
-[2] Credit Suisse Asset Management. "Introduction to Collateralized Loan Obligations." Credit Suisse, 2022.
 
+[2] Credit Suisse Asset Management. "Introduction to Collateralized Loan Obligations." Credit Suisse, 2022.
