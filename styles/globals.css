@@ -15,12 +15,15 @@
 @tailwind utilities;
 
 
-.katex {
-  margin: auto;
+/* p>.katex {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2rem;
   justify-items: center;
   margin-bottom: 2rem;
-}
+  align-items: center;
+  border: 1px solid red;
+} */
 
 .prose :where(strong):not(:where([class~="not-prose"] *)) {
   color: var(--tw-prose-bold);
@@ -29,13 +32,13 @@
 
 .prose :where(h2):not(:where([class~="not-prose"] *)) {
   color: var(--tw-prose-headings);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.0em;
+  font-weight: 500;
   margin-top: 2em;
+  font-size: 21px;
   margin-bottom: 1em;
   line-height: 1.3333333;
 }
+
 
 
 .card::before,
@@ -62,7 +65,7 @@
 iframe {
   margin: auto;
   width: 800px;
-  height: 45  0px;
+  height: 45 0px;
 
 }
 

@@ -8,7 +8,9 @@ reading_time: "5 min"
 
 The given jump diffusion model equation for $S_{i+1}$ is: 
 
-$$ S_{i+1} = S_{i} \cdot (1 + (\theta F_{\lambda_{i}} dt) + (\mu  dt) + \sigma \cdot \epsilon_{i} \cdot \sqrt{dt}) $$
+```math
+S_{i+1} = S_{i} \cdot (1 + (\theta F_{\lambda_{i}} dt) + (\mu  dt) + \sigma \cdot \epsilon_{i} \cdot \sqrt{dt}) 
+```
 
 ### Parameters 
 
