@@ -14,17 +14,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* p>.katex {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  justify-items: center;
-  margin-bottom: 2rem;
-  align-items: center;
-  border: 1px solid red;
-} */
-
 .prose :where(strong):not(:where([class~="not-prose"] *)) {
   color: var(--tw-prose-bold);
   font-weight: 800;

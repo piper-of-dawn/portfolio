@@ -46,7 +46,6 @@ const about = () => {
         <EducationTimeline /></div>
 
 
-
     </div>
     // </div>
 

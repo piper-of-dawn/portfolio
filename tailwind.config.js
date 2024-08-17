@@ -21,10 +21,9 @@ module.exports = {
 
     },
     fontFamily: {
-      'sans': ['-apple-system', 'BlinkMacSystemFont', 'Supreme', 'Arial'],
+      'sans': ['-apple-system', 'BlinkMacSystemFont', 'Supreme', 'Arial'],      
       'mono': ['var(--font-geist-mono)', 'JetBrains Mono', 'Consolas', 'sans-serif'],
-      'switzer': ['Source Serif 4', 'Switzer'],
-      serif: ['var(--font-serif)'],
+      'serif': ['var(--font-serif)','NewComputerModern10', 'Cambria', 'Times New Roman', 'Times', 'serif'],
     },
 
     fontWeight: {
