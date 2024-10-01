@@ -4,12 +4,11 @@ subtitle: "A Note to Self"
 hierarchy: "/ Diary"
 date: "2022-04-15"
 ---
+A list of timeless reminders about how l aim to be or just how life seems to work.
 
 ### FOCUS ON FASTER ITERATION AND NOT ON ACCURACY
- - It's important to do things fast.  
- - A week is 2% of the year. 
- - Time is the denominator. 
- - You learn more per unit time because you make contact with reality more frequently.
+ - It's important to do things fast. A week is 2% of the year. Time is the denominator.
+ - Motion creates information. You learn more per unit time because you make contact with reality more frequently.
  - Optimize for being spectacularly right some of the time, and low-stakes wrong a lot of the time. 
  - The goal is not to avoid mistakes; the goal is to achieve uncorrelated levels of excellence in some dimension. 
  - The downsides are worth it. 
@@ -35,8 +34,9 @@ date: "2022-04-15"
 - Thinking is easy, doing is hard! Only execution matters. Ship it!
 
 ### LIFE ISN'T UNFAIR, IT IS DISPROPORTIONATELY UNFAIR. 
-- The path isn't linear. It is a Geometric Brownian motion with a drift. Make sure that the trend coefficient is always positive. 
+- The path isn't linear. It is a Geometric Brownian motion with a drift. Make sure that the trend coefficient is always positive.
 - There are people who are way more smarter and hardworking than you are, but are not sitting on the priviliges that you have. And vice verca.
+- At the age of 25, it’s very tempting to conflate agency and determinism in scripts. You have a default state  “I’m a smart guy, I have these resources at hand. The future looks full of possibilities." And then life will hit you hard on face. 
 - Efficient Market Hypothesis is a flawed heuristic.
 
 ### WE ARE MONKEYS. WE COPY.
@@ -44,13 +44,17 @@ date: "2022-04-15"
 - The best thing you can do is that make sure that the herd around you is smarter and more aware than you are. 
 
 ### HAVE SELF BELIEF TO THE POINT OF DELUSION
-- You can do more than you think
+- You can do more than you think.
+- Always try to know to what extent you are operating in a condition of learned helplessness in institutionalized environments. 
 - You are tied down by your own invisible orthodoxy. The laws of physics are the only limit
 - And do not get trapped at local maxima. 
 
+### IT IS BETTER TO TRAVEL WELL THAN TO ARRIVE
+- Life is happening, right now. There is no past. There is no future.
+- Don't forget that you have limitless capability to respond.
+  
 ### RAISE THE CEILING, AND NEVER THE FLOOR
 - And yes, most important! Ego is the enemy. It is self defeating and depression inducing. 
-- Always be grounded. 
 - The higher you go, the harder it will get to contain your ego. 
 - Never forget, you are a mere mortal chimp with a plan and also without a tail.
 
