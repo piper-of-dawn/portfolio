@@ -35,3 +35,4 @@ In essence, KL divergence provides a way to assess the discrepancy between two p
 
 
 Also read about [Maximising Likehood is equivalent to Minimising KL Divergence](https://mmuratarat.github.io/2019-05-13/mle-kl-divergence)
+
