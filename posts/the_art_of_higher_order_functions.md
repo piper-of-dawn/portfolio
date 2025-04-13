@@ -6,6 +6,8 @@ date: "2025-04-13"
 reading_time: "5 min"
 ---
 
+!['Cover'](/images/blogCovers/functional_programming.png)
+
 Functional programming is awesome. The concept of a function is so pure. You have this elegant thing that takes an input and gives you an output, and no matter what, the same input always gives you the same output. The key thing that ensures that it gives you the same answer always for infinity is that there's no state and hence no side-effects.
 
 Higher-order functions are beautiful. They take the idea of a function—this clean little input-output machine—and elevate it. Instead of just working with numbers or strings, now functions can take in other functions. They can return functions. They can build behaviour out of behaviour. And suddenly, your functions are composable, modular, and expressive and still the logic and the essence of a function remains pure, untouched.
