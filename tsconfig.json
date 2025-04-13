@@ -21,14 +21,16 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/polish/PolishWordsTable.tsx"  ],
+    "**/*.tsx",
+    "app/polish/PolishWordsTable.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

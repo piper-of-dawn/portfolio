@@ -6,7 +6,7 @@
   --clr-2: #032363;
   --clr-3: #2b5585;
   --clr-4: rgb(0, 120, 129);
-  --clr-5: #052b2f;
+  /* --clr-5: #052b2f; */
 }
 
 
@@ -157,7 +157,10 @@ span>.katex {
   min-height: 70px;
 }
 
-
+pre {
+  margin: None;
+  padding: 0;
+}
 
 /* CSS for screen size 540px and below */
 @media screen and (max-width: 540px) {
@@ -170,6 +173,11 @@ span>.katex {
     margin-bottom: 50px;
     /* Align the items in container to top */
 
+  }
+
+  pre {
+    margin: None;
+    padding: 0;
   }
 
 
@@ -209,6 +217,7 @@ span>.katex {
   }
 }
 
+/* Remove or customize the border around code blocks */
 
 
 /* CSS for tablet */
@@ -218,6 +227,11 @@ span>.katex {
     row-gap: 1rem;
     width: 100vw;
 
+  }
+
+  pre {
+    margin: None;
+    padding: 0;
   }
 
   .intro {

@@ -12,16 +12,6 @@ blogPost {
 }
 
 
-.blogPost pre {
-  /* Styles for pre inside .blogPost */
-  background-color: slategray;
-  color: white;
-  /* Example text color for better visibility on the slate gray background */
-  padding: 10px;
-  border-radius: 5px;
-  overflow: auto;
-  /* Enable horizontal scroll for large code blocks */
-}
 
 .blogPost p {
   /* Styles for p inside .blogPost */

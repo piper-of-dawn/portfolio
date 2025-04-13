@@ -16,6 +16,7 @@ import remarkToc from 'remark-toc'
 import 'katex/dist/katex.min.css'
 import remarkGfm from 'remark-gfm'
 import remarkHighlight from 'rehype-highlight'
+import 'highlight.js/styles/dark.css'; // GitHub dark theme
 
 
 const getPostContent = (slug: string) => {
@@ -35,7 +36,7 @@ export const generateStaticParams = async () => {
 };
 
 const BlogPage = (props: any) => {
-const slug = props.params.slug;
+  const slug = props.params.slug;
   const post = getPostContent(slug);
 
 
@@ -51,8 +52,25 @@ const slug = props.params.slug;
           Kumar Shantanu | {post.data.date}
         </div>
         <div className="font-sans">
-        <ReactMarkdown className="text-polar-night reading-relaxed pt-16" remarkPlugins={[remarkMath, remarkGfm, remarkParse, remarkRehype, [remarkToc, {tight: false, maxDepth: 5}]]}
-          rehypePlugins={[rehypeKatex, rehypeRaw, rehypeStringify, rehypeHighlight]}>{post.content}</ReactMarkdown></div>
+          <ReactMarkdown
+            className="text-polar-night reading-relaxed pt-16"
+            remarkPlugins={[
+              remarkMath,
+              remarkGfm,
+              remarkParse,
+              remarkRehype,
+              [remarkToc, { tight: false, maxDepth: 5 }],
+            ]}
+            rehypePlugins={[
+              rehypeKatex,
+              rehypeRaw,
+              rehypeStringify,
+              [rehypeHighlight, { ignoreMissing: true }],
+            ]}
+          >
+            {post.content}
+          </ReactMarkdown>
+        </div>
 
       </div>
 
