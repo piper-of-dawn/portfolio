@@ -1,7 +1,7 @@
 ---
 title: "The Elegance of Composition: Higher-Order Functions in C++"
-subtitle: "A simple guide for dping Higher Order Functions in C++"
-hierarchy: "/ Notes / Programming"
+subtitle: "A simple guide for doing Higher Order Functions in C++"
+hierarchy: "/ Writings / Programming"
 date: "2025-04-13"
 reading_time: "5 min"
 ---
